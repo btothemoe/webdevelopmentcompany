@@ -15,7 +15,6 @@ body,
 html {
   font-family: "HelveticaNeue", sans-serif;
   font-size: 50px;
-  font-weight: bold;
   background-color: #f1f1f1;
   max-width: 100%;
   overflow-x: hidden;
@@ -54,7 +53,6 @@ html {
 
   .navbar-menu {
     width: 96%;
-    min-height: 2.5em;
     margin: auto;
     position: fixed;
     display: -webkit-box;
@@ -70,7 +68,18 @@ html {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     max-width: 57.2em;
+    height: 1.5em;
   }
+
+  .navbar-menu .nav-logo {
+    margin: 0 !important;
+    position: absolute;
+    color: #f1f1f1;
+    left: 200px;
+    font-size: 25px;
+    background-color: rgb(39, 39, 39);
+  }
+
   #on-top {
     margin-right: 0em;
     display: -webkit-box;
@@ -105,8 +114,7 @@ html {
   }
 
   .side-nav ul {
-    margin-top: 0;
-    transform: translateX(0);
+    text-align: right;
   }
   .side-nav ul li {
     margin: 0 0 0 0.83333333em;
@@ -117,7 +125,7 @@ html {
     list-style-type: none;
   }
   .side-nav ul li:hover a.link {
-    color: #fff;
+    color: rgb(222, 124, 69);
   }
   .side-nav ul li:hover a.link:before {
     width: 100%;
