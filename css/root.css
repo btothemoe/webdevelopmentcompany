@@ -10,6 +10,23 @@
   font-display: swap;
   src: local(""), url("/fonts/HelveticaNeue.woff") format("woff");
 }
+/*
+@font-face {
+  font-family: "HelveticaNeue-Bold";
+  font-style: normal;
+  font-weight: bold;
+  font-display: swap;
+  src: local(""), url("/fonts/HelveticaNeue-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "HelveticaNeue-Medium";
+  font-style: normal;
+  font-weight: medium;
+  font-display: swap;
+  src: local(""), url("/fonts/HelveticaNeue-Medium.woff") format("woff");
+}
+*/
 
 /*-- -------------------------- -->
 <---         NAVIGATION         -->
@@ -17,6 +34,78 @@
 
 /* -- Mobile Navigation -- */
 @media screen and (min-width: 0px) {
+  body,
+  html {
+    font-family: "HelveticaNeue", sans-serif;
+    font-size: 20px;
+    background-color: #f1f1f1;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  nav {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .navbar {
+    width: 95%;
+    background-color: rgb(212, 212, 212);
+    border-bottom: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .navbar-navigation {
+    width: 20%;
+    height: 100%;
+    border: 1px dashed;
+    display: flex; /* establish flex container */
+    flex-direction: column; /* make main axis vertical */
+    justify-content: center; /* center items vertically, in this case */
+  }
+
+  .navbar-logo {
+    width: 20%;
+    height: 100%;
+    border: 1px dashed;
+    display: flex; /* establish flex container */
+    flex-direction: column; /* make main axis vertical */
+    justify-content: center; /* center items vertically, in this case */
+  }
+
+  .navbar-menu {
+    width: 60%;
+    height: 100%;
+    border: 1px dashed;
+    display: flex; /* establish flex container */
+    flex-direction: column; /* make main axis vertical */
+    justify-content: center; /* center items vertically, in this case */
+  }
+
+  .navbar-menu ul {
+    display: flex;
+    justify-content: right;
+    list-style: none;
+  }
+
+  .navbar-menu li {
+    flex: 0 0 auto;
+    padding: 20px;
+  }
+
+  .navbar-menu a {
+    text-decoration: none;
+    color: black;
+  }
+
+  .navbar-menu {
+    display: none;
+  }
 }
 
 /* -- Ipad Pro -- */
@@ -60,7 +149,6 @@
     width: 20%;
     height: 100%;
     border: 1px dashed;
-    display: flex;
     display: flex; /* establish flex container */
     flex-direction: column; /* make main axis vertical */
     justify-content: center; /* center items vertically, in this case */
@@ -70,7 +158,6 @@
     width: 20%;
     height: 100%;
     border: 1px dashed;
-    display: flex;
     display: flex; /* establish flex container */
     flex-direction: column; /* make main axis vertical */
     justify-content: center; /* center items vertically, in this case */
@@ -80,7 +167,6 @@
     width: 60%;
     height: 100%;
     border: 1px dashed;
-    display: flex;
     display: flex; /* establish flex container */
     flex-direction: column; /* make main axis vertical */
     justify-content: center; /* center items vertically, in this case */
@@ -116,6 +202,53 @@
 
 /* -- Mobile -- */
 @media screen and (min-width: 0px) {
+  body,
+  html {
+    font-family: "HelveticaNeue", sans-serif;
+    font-size: 20px;
+    background-color: #f1f1f1;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  #footer {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  #footer .container {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    background-color: gray;
+  }
+
+  #footer .left-section {
+    width: 40%;
+    border: 1px dashed;
+  }
+
+  #footer .right-section {
+    width: 60%;
+    border: 1px dashed;
+  }
+
+  .socials {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .socials .container {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(255, 255, 159);
+  }
 }
 
 /* -- Ipad Pro -- */
