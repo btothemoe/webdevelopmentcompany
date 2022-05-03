@@ -11,15 +11,6 @@
   src: local(""), url("/fonts/HelveticaNeue.woff") format("woff");
 }
 
-body,
-html {
-  font-family: "HelveticaNeue", sans-serif;
-  font-size: 50px;
-  background-color: #f1f1f1;
-  max-width: 100%;
-  overflow-x: hidden;
-}
-
 /*-- -------------------------- -->
 <---         NAVIGATION         -->
 <--- -------------------------- -*/
@@ -38,153 +29,77 @@ html {
 
 /* -- Small Desktop -- */
 @media screen and (min-width: 1024px) {
+  body,
+  html {
+    font-family: "HelveticaNeue", sans-serif;
+    font-size: 20px;
+    background-color: #f1f1f1;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
   nav {
-    width: 99%;
-    border-bottom: 2px solid black;
-    position: absolute;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    width: 100%;
+    height: 80px;
+
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
+    flex-direction: row;
     justify-content: center;
-    height: 1.5em;
+  }
+
+  .navbar {
+    width: 95%;
+    background-color: rgb(212, 212, 212);
+    border-bottom: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .navbar-navigation {
+    width: 20%;
+    height: 100%;
+    border: 1px dashed;
+    display: flex;
+    display: flex; /* establish flex container */
+    flex-direction: column; /* make main axis vertical */
+    justify-content: center; /* center items vertically, in this case */
+  }
+
+  .navbar-logo {
+    width: 20%;
+    height: 100%;
+    border: 1px dashed;
+    display: flex;
+    display: flex; /* establish flex container */
+    flex-direction: column; /* make main axis vertical */
+    justify-content: center; /* center items vertically, in this case */
   }
 
   .navbar-menu {
-    width: 96%;
-    margin: auto;
-    position: fixed;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    z-index: 10000;
-    left: 0;
-    background: transparent;
-    overflow: visible;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    max-width: 57.2em;
-    height: 1.5em;
-  }
-
-  .navbar-menu .nav-logo {
-    margin: 0 !important;
-    position: absolute;
-    color: #f1f1f1;
-    left: 200px;
-    font-size: 25px;
-    background-color: rgb(39, 39, 39);
-  }
-
-  #on-top {
-    margin-right: 0em;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
-  }
-
-  .side-nav {
-    padding: 0;
-    width: 100%;
-    max-width: 72.5em;
+    width: 60%;
     height: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    border: 1px dashed;
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
-    right: 0;
-    background: transparent;
-    border-radius: 5px;
-    pointer-events: initial;
+    display: flex; /* establish flex container */
+    flex-direction: column; /* make main axis vertical */
+    justify-content: center; /* center items vertically, in this case */
   }
 
-  .side-nav ul {
-    text-align: right;
+  .navbar-menu ul {
+    display: flex;
+    justify-content: right;
+    list-style: none;
   }
-  .side-nav ul li {
-    margin: 0 0 0 0.83333333em;
-    text-align: right;
-    color: #fff;
-    font-size: 20px;
-    font-weight: bold;
-    list-style-type: none;
+
+  .navbar-menu li {
+    flex: 0 0 auto;
+    padding: 20px;
   }
-  .side-nav ul li:hover a.link {
-    color: rgb(222, 124, 69);
-  }
-  .side-nav ul li:hover a.link:before {
-    width: 100%;
-    opacity: 1;
-    transform: translateY(-50%) scaleX(1);
-  }
-  .side-nav a {
-    padding: 0 0.5em;
-    color: #000;
-    -webkit-transition: 0.2s ease;
-    -o-transition: 0.2s ease;
-    transition: 0.2s ease;
-    font-size: 1em;
-    text-transform: capitalize;
-    position: relative;
-    font-weight: bold;
+
+  .navbar-menu a {
     text-decoration: none;
-  }
-  .side-nav a:before {
-    cursor: pointer;
-    -webkit-transition: 0.2s ease;
-    -o-transition: 0.2s ease;
-    transition: 0.2s ease;
-    content: "";
-    background: var(--primary);
-    height: 2.22222222em;
-    width: 100%;
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%) scaleX(0);
-    z-index: -1;
-    opacity: 0;
-    transition: opacity 0.3s, transform 0.3s;
-  }
-  .side-nav a#active-menu {
-    position: relative;
-    border: none;
-    color: #fff;
-    padding-top: 0;
-    padding-bottom: 0;
-    font-weight: bold;
-  }
-  .side-nav a#active-menu:before {
-    cursor: pointer;
-    -webkit-transition: 0.2s ease;
-    -o-transition: 0.2s ease;
-    transition: 0.2s ease;
-    content: "";
-    background: var(--primary);
-    height: 2.22222222em;
-    width: 100%;
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: -1;
-    opacity: 1;
-    transition: opacity 0.3s, transform 0.3s;
+    color: black;
   }
 }
 
@@ -199,7 +114,7 @@ html {
 <---         FOOTER             -->
 <--- -------------------------- -*/
 
-/* -- Mobile Navigation -- */
+/* -- Mobile -- */
 @media screen and (min-width: 0px) {
 }
 
@@ -213,6 +128,53 @@ html {
 
 /* -- Small Desktop -- */
 @media screen and (min-width: 1024px) {
+  body,
+  html {
+    font-family: "HelveticaNeue", sans-serif;
+    font-size: 20px;
+    background-color: #f1f1f1;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  #footer {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  #footer .container {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    background-color: gray;
+  }
+
+  #footer .left-section {
+    width: 40%;
+    border: 1px dashed;
+  }
+
+  #footer .right-section {
+    width: 60%;
+    border: 1px dashed;
+  }
+
+  .socials {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .socials .container {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(255, 255, 159);
+  }
 }
 
 /* -- Regular Desktop -- */

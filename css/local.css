@@ -1,0 +1,51 @@
+/*-- -------------------------- -->
+<---          Landing           -->
+<--- -------------------------- -*/
+/* -- Mobile -- */
+@media screen and (min-width: 0px) {
+}
+
+/* -- Ipad Pro -- */
+@media screen and (min-width: 450px) and (max-width: 991px) {
+}
+
+/* -- Tablets -- */
+@media screen and (min-width: 750px) and (max-width: 1023px) {
+}
+
+/* -- Small Desktop -- */
+@media screen and (min-width: 1024px) {
+}
+
+/* -- Regular Desktop -- */
+@media screen and (min-width: 1300px) {
+}
+
+@media only screen and (min-width: 2000px) {
+}
+
+/*-- -------------------------- -->
+<---          Services          -->
+<--- -------------------------- -*/
+/* -- Mobile -- */
+@media screen and (min-width: 0px) {
+}
+
+/* -- Ipad Pro -- */
+@media screen and (min-width: 450px) and (max-width: 991px) {
+}
+
+/* -- Tablets -- */
+@media screen and (min-width: 750px) and (max-width: 1023px) {
+}
+
+/* -- Small Desktop -- */
+@media screen and (min-width: 1024px) {
+}
+
+/* -- Regular Desktop -- */
+@media screen and (min-width: 1300px) {
+}
+
+@media only screen and (min-width: 2000px) {
+}
