@@ -15,6 +15,40 @@
 
 /* -- Small Desktop -- */
 @media screen and (min-width: 1024px) {
+  body,
+  html {
+    font-family: "HelveticaNeue", sans-serif;
+    font-size: 20px;
+    background-color: #f1f1f1;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  #hero {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  #hero .container {
+    width: 57%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  #hero .left-section {
+    width: 83%;
+    background-color: rgb(223, 223, 253);
+    border: 1px dashed;
+  }
+
+  #hero .right-section {
+    width: 17%;
+    background-color: rgb(204, 204, 252);
+    border: 1px dashed;
+  }
 }
 
 /* -- Regular Desktop -- */
@@ -41,6 +75,225 @@
 
 /* -- Small Desktop -- */
 @media screen and (min-width: 1024px) {
+  body,
+  html {
+    font-family: "HelveticaNeue", sans-serif;
+    font-size: 20px;
+    background-color: #f1f1f1;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  #services {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  #services .container {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  #services .left-section {
+    width: 70%;
+    border: 1px dashed;
+    background-color: rgb(255, 232, 188);
+  }
+
+  #services .right-section {
+    width: 30%;
+    border: 1px dashed;
+    background-color: rgb(255, 218, 150);
+  }
+}
+
+/* -- Regular Desktop -- */
+@media screen and (min-width: 1300px) {
+}
+
+@media only screen and (min-width: 2000px) {
+}
+
+/*-- -------------------------- -->
+<---          PORTFOLIO         -->
+<--- -------------------------- -*/
+/* -- Mobile -- */
+@media screen and (min-width: 0px) {
+}
+
+/* -- Ipad Pro -- */
+@media screen and (min-width: 450px) and (max-width: 991px) {
+}
+
+/* -- Tablets -- */
+@media screen and (min-width: 750px) and (max-width: 1023px) {
+}
+
+/* -- Small Desktop -- */
+@media screen and (min-width: 1024px) {
+  body,
+  html {
+    font-family: "HelveticaNeue", sans-serif;
+    font-size: 20px;
+    background-color: #f1f1f1;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  #portfolio {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  #portfolio .container {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  #portfolio .left-section {
+    width: 30%;
+    border: 1px dashed;
+    background-color: rgb(208, 255, 208);
+  }
+
+  #portfolio .middle-section {
+    width: 30%;
+    border: 1px dashed;
+    background-color: rgb(195, 255, 195);
+  }
+
+  #portfolio .right-section {
+    width: 30%;
+    border: 1px dashed;
+    background-color: rgb(181, 253, 181);
+  }
+}
+
+/* -- Regular Desktop -- */
+@media screen and (min-width: 1300px) {
+}
+
+@media only screen and (min-width: 2000px) {
+}
+
+/*-- -------------------------- -->
+<---          PRICING           -->
+<--- -------------------------- -*/
+
+/* -- Mobile -- */
+@media screen and (min-width: 0px) {
+}
+
+/* -- Ipad Pro -- */
+@media screen and (min-width: 450px) and (max-width: 991px) {
+}
+
+/* -- Tablets -- */
+@media screen and (min-width: 750px) and (max-width: 1023px) {
+}
+
+/* -- Small Desktop -- */
+@media screen and (min-width: 1024px) {
+  body,
+  html {
+    font-family: "HelveticaNeue", sans-serif;
+    font-size: 20px;
+    background-color: #f1f1f1;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  #pricing {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  #pricing .container {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  #pricing .left-section {
+    width: 30%;
+    border: 1px dashed;
+    background-color: rgb(208, 236, 255);
+  }
+
+  #pricing .right-section {
+    width: 30%;
+    border: 1px dashed;
+    background-color: rgb(167, 220, 255);
+  }
+}
+
+/* -- Regular Desktop -- */
+@media screen and (min-width: 1300px) {
+}
+
+@media only screen and (min-width: 2000px) {
+}
+
+/*-- -------------------------- -->
+<---          BLOG              -->
+<--- -------------------------- -*/
+
+/* -- Mobile -- */
+@media screen and (min-width: 0px) {
+}
+
+/* -- Ipad Pro -- */
+@media screen and (min-width: 450px) and (max-width: 991px) {
+}
+
+/* -- Tablets -- */
+@media screen and (min-width: 750px) and (max-width: 1023px) {
+}
+
+/* -- Small Desktop -- */
+@media screen and (min-width: 1024px) {
+  body,
+  html {
+    font-family: "HelveticaNeue", sans-serif;
+    font-size: 20px;
+    background-color: #f1f1f1;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  #blog {
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  #blog .container {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  #blog .left-section {
+    width: 80%;
+    border: 1px dashed;
+    background-color: rgb(255, 208, 208);
+  }
 }
 
 /* -- Regular Desktop -- */
