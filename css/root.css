@@ -6,26 +6,28 @@
 @font-face {
   font-family: "HelveticaNeue";
   font-style: normal;
-  font-weight: 400;
   font-display: swap;
   src: local(""), url("/fonts/HelveticaNeue.woff") format("woff");
 }
-/*
+
 @font-face {
-  font-family: "HelveticaNeue-Bold";
+  font-family: "HelveticaNeue";
   font-style: normal;
   font-weight: bold;
   font-display: swap;
   src: local(""), url("/fonts/HelveticaNeue-Bold.woff") format("woff");
 }
 
+/*
+
 @font-face {
-  font-family: "HelveticaNeue-Medium";
+  font-family: "HelveticaNeue";
   font-style: normal;
   font-weight: medium;
   font-display: swap;
   src: local(""), url("/fonts/HelveticaNeue-Medium.woff") format("woff");
 }
+
 */
 
 /*-- -------------------------- -->
@@ -56,8 +58,8 @@
     background-color: rgb(212, 212, 212);
     border-bottom: 2px solid black;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: row-reverse;
+    justify-content: space-between;
   }
 
   .navbar-navigation {
@@ -76,6 +78,7 @@
     display: flex; /* establish flex container */
     flex-direction: column; /* make main axis vertical */
     justify-content: center; /* center items vertically, in this case */
+    font-weight: bold;
   }
 
   .navbar-menu {
@@ -146,7 +149,7 @@
   }
 
   .navbar-navigation {
-    width: 20%;
+    width: 15%;
     height: 100%;
     border: 1px dashed;
     display: flex; /* establish flex container */
@@ -155,7 +158,7 @@
   }
 
   .navbar-logo {
-    width: 20%;
+    width: 25%;
     height: 100%;
     border: 1px dashed;
     display: flex; /* establish flex container */
@@ -272,7 +275,7 @@
 
   #footer {
     width: 100%;
-    height: 400px;
+    height: 60vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -290,9 +293,56 @@
     border: 1px dashed;
   }
 
+  #footer .left-section .navigation {
+    height: 55%;
+    border: 1px dashed;
+  }
+
+  #footer .left-section .email-form {
+    height: 45%;
+    border: 1px dashed;
+  }
+
   #footer .right-section {
     width: 60%;
     border: 1px dashed;
+  }
+
+  #footer .right-section .email {
+    height: 55%;
+    border: 1px dashed;
+  }
+
+  #footer .right-section .services {
+    height: 45%;
+    border: 1px dashed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #footer .right-section .services .left {
+    border: 1px dashed;
+    width: 33.3%;
+    display: flex; /* establish flex container */
+    flex-direction: row; /* make main axis vertical */
+    justify-content: center; /* center items vertically, in this case */
+  }
+
+  #footer .right-section .services .middle {
+    border: 1px dashed;
+    width: 33.3%;
+    display: flex; /* establish flex container */
+    flex-direction: row; /* make main axis vertical */
+    justify-content: center; /* center items vertically, in this case */
+  }
+
+  #footer .right-section .services .right {
+    border: 1px dashed;
+    width: 33.3%;
+    display: flex; /* establish flex container */
+    flex-direction: row; /* make main axis vertical */
+    justify-content: center; /* center items vertically, in this case */
   }
 
   .socials {
