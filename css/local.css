@@ -6,6 +6,7 @@
   body,
   html {
     font-family: "HelveticaNeue", sans-serif;
+    color: rgb(32, 32, 32);
     font-size: 20px;
     background-color: #f1f1f1;
     max-width: 100%;
@@ -28,14 +29,18 @@
 
   #hero .left-section {
     height: 50%;
+    /*
     background-color: rgb(223, 223, 253);
     border: 1px dashed;
+    */
   }
 
   #hero .right-section {
     height: 50%;
+    /*
     background-color: rgb(204, 204, 252);
     border: 1px dashed;
+    */
   }
 }
 
@@ -60,31 +65,39 @@
 
   #hero {
     width: 100%;
-    height: 70vh;
+    height: 80vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
   }
 
   #hero .container {
-    width: 66.5%;
+    /*width: 66.5%;*/
+    /* NOTE: Played around with the constant with and margins here to leave the
+             hero section the same size on resizing.  Will need to check this out more.
+    */
+    width: 1300px;
+    margin-left: 27px;
+    margin-right: 27px;
     display: flex;
     flex-direction: row;
   }
 
   #hero .left-section {
-    width: 63%;
+    width: 55%;
     height: 70vh;
+    /*
     background-color: rgb(223, 223, 253);
     border: 1px dashed;
+    */
     display: flex; /* establish flex container */
     flex-direction: column; /* make main axis vertical */
     justify-content: center; /* center items vertically, in this case */
   }
 
   #hero .left-section .hero-header {
-    font-size: 4.5vw;
-    color: rgb(32, 32, 32);
+    /*font-size: 4.5vw;*/
+    font-size: 70px;
     line-height: 95%;
     font-weight: bold;
     padding-bottom: 15px;
@@ -96,8 +109,8 @@
   }
 
   #hero .left-section button {
-    border: 1px solid rgb(175, 175, 175);
-    width: 200px;
+    border: 1px solid rgb(196, 196, 196);
+    width: 250px;
     height: 60px;
     display: inline-flex;
     align-items: center;
@@ -115,11 +128,15 @@
   }
 
   #hero .right-section {
-    width: 37%;
+    width: 40%;
     height: 70vh;
+    padding-top: 20px;
     /*background-color: rgb(204, 204, 252);
     border: 1px dashed;
     */
+    display: flex; /* establish flex container */
+    flex-direction: column; /* make main axis vertical */
+    justify-content: center; /* center items vertically, in this case */
   }
 }
 
@@ -147,9 +164,11 @@
   #services {
     width: 100%;
     height: 50vh;
+    /*
     display: flex;
     flex-direction: row;
     justify-content: center;
+    */
   }
 
   #services .container {
@@ -160,8 +179,10 @@
 
   #services .left-section {
     height: 20%;
+    /*
     border: 1px dashed;
     background-color: rgb(255, 232, 188);
+    */
     display: flex; /* establish flex container */
     flex-direction: column; /* make main axis vertical */
     justify-content: center; /* center items vertically, in this case */
@@ -169,8 +190,10 @@
 
   #services .right-section {
     height: 80%;
+    /*
     border: 1px dashed;
     background-color: rgb(255, 218, 150);
+    */
     display: flex; /* establish flex container */
     flex-direction: column; /* make main axis vertical */
     justify-content: center; /* center items vertically, in this case */
@@ -193,12 +216,11 @@
     font-size: 20px;
     background-color: #f1f1f1;
     max-width: 100%;
-    overflow-x: hidden;
   }
 
   #services {
     width: 100%;
-    height: 50vh;
+    height: 60vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -209,13 +231,12 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    border-bottom: 2px solid rgb(214, 214, 214);
   }
 
   #services .left-section {
-    width: 45%;
+    width: 55%;
     height: 50vh;
-    border: 1px dashed;
-    background-color: rgb(255, 232, 188);
     font-size: 3.5vw;
     line-height: 60px;
     display: flex; /* establish flex container */
@@ -223,14 +244,185 @@
     justify-content: center; /* center items vertically, in this case */
   }
 
+  #services .left-section .services-header {
+    font-size: 70px;
+    line-height: 95%;
+    font-weight: bold;
+  }
+
+  #services .left-section p {
+    font-size: 70px;
+    line-height: 95%;
+  }
+
   #services .right-section {
     width: 40%;
     height: 50vh;
-    border: 1px dashed;
-    background-color: rgb(255, 218, 150);
     display: flex; /* establish flex container */
     flex-direction: column; /* make main axis vertical */
     justify-content: center; /* center items vertically, in this case */
+    font-size: 20px;
+    line-height: 150%;
+    padding-top: 50px;
+  }
+
+  #services .right-section button {
+    border: 1px solid rgb(196, 196, 196);
+    width: 250px;
+    height: 60px;
+    display: inline-flex;
+    align-items: center;
+    font-size: 20px;
+  }
+
+  #services .right-section #button1 {
+    background-color: rgb(48, 86, 197);
+    color: white;
+  }
+}
+
+/* -- Regular Desktop -- */
+@media screen and (min-width: 1300px) {
+}
+
+@media only screen and (min-width: 2000px) {
+}
+
+/*-- -------------------------- -->
+<---          PORTFOLIO         -->
+<--- -------------------------- -*/
+/* -- Mobile -- */
+@media screen and (min-width: 0px) {
+  body,
+  html {
+    font-family: "HelveticaNeue", sans-serif;
+    font-size: 20px;
+    background-color: #f1f1f1;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  #portfolio {
+    width: 100%;
+    height: 80vh;
+    padding-top: 75px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 50px;
+  }
+
+  #portfolio .container {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5vw;
+  }
+
+  #portfolio .left-section {
+    height: 33.3%;
+    /*
+    border: 1px dashed;
+    background-color: rgb(208, 255, 208);
+    */
+  }
+
+  #portfolio .middle-section {
+    height: 33.3%;
+    /*
+    border: 1px dashed;
+    background-color: rgb(195, 255, 195);
+    */
+  }
+
+  #portfolio .right-section {
+    height: 33.3%;
+    /*
+    border: 1px dashed;
+    background-color: rgb(181, 253, 181);
+    */
+  }
+}
+
+/* -- Ipad Pro -- */
+@media screen and (min-width: 450px) and (max-width: 991px) {
+}
+
+/* -- Tablets -- */
+@media screen and (min-width: 750px) and (max-width: 1023px) {
+}
+
+/* -- Small Desktop -- */
+@media screen and (min-width: 1024px) {
+  body,
+  html {
+    font-family: "HelveticaNeue", sans-serif;
+    font-size: 20px;
+    background-color: #f1f1f1;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  #portfolio {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  #portfolio .container {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5vw;
+  }
+
+  #portfolio .left-section {
+    width: 33.3%;
+    height: 90vh;
+    /*
+    border: 1px dashed;
+    background-color: rgb(208, 255, 208);
+    */
+  }
+
+  #portfolio .middle-section {
+    width: 33.3%;
+    height: 90vh;
+    /*
+    border: 1px dashed;
+    background-color: rgb(195, 255, 195);
+    */
+  }
+
+  #portfolio .right-section {
+    width: 33.3%;
+    height: 90vh;
+    /*
+    border: 1px dashed;
+    background-color: rgb(181, 253, 181);
+    */
+  }
+
+  #portfolio .title {
+    padding-bottom: 20px;
+    font-weight: bold;
+  }
+
+  #portfolio .description {
+    padding-bottom: 20px;
+  }
+
+  #portfolio .subtitles {
+    font-size: 14px;
+    padding-bottom: 10px;
+  }
+
+  #portfolio .subtitles span {
+    padding-right: 10px;
   }
 }
 
@@ -273,14 +465,18 @@
 
   #pricing .left-section {
     height: 40%;
+    /*
     border: 1px dashed;
     background-color: rgb(208, 236, 255);
+    */
   }
 
   #pricing .right-section {
     height: 60%;
+    /*
     border: 1px dashed;
     background-color: rgb(167, 220, 255);
+    */
   }
 }
 
@@ -305,7 +501,7 @@
 
   #pricing {
     width: 100%;
-    height: 50vh;
+    height: 80vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -319,147 +515,75 @@
   }
 
   #pricing .left-section {
-    width: 40%;
-    height: 50vh;
+    width: 50%;
+    height: 80vh;
+    /*
     border: 1px dashed;
     background-color: rgb(208, 236, 255);
+    */
+    display: flex; /* establish flex container */
+    flex-direction: column; /* make main axis vertical */
+    justify-content: center; /* center items vertically, in this case */
   }
 
   #pricing .right-section {
-    width: 60%;
-    height: 50vh;
+    width: 50%;
+    height: 80vh;
+    /*
     border: 1px dashed;
     background-color: rgb(167, 220, 255);
+    */
     display: flex; /* establish flex container */
     flex-direction: row; /* make main axis vertical */
     justify-content: center; /* center items vertically, in this case */
     flex-wrap: wrap;
   }
 
+  #pricing .pricing-box-container {
+    display: flex; /* establish flex container */
+    flex-direction: row; /* make main axis vertical */
+    width: 49%;
+  }
+
+  #pricing .pricing-box-container img {
+    padding-right: 10px;
+  }
+
   #pricing .pricing-box {
-    width: 33%;
+    width: 49%;
+    /*
     border: 1px dashed;
-  }
-}
-
-/* -- Regular Desktop -- */
-@media screen and (min-width: 1300px) {
-}
-
-@media only screen and (min-width: 2000px) {
-}
-
-/*-- -------------------------- -->
-<---          PORTFOLIO         -->
-<--- -------------------------- -*/
-/* -- Mobile -- */
-@media screen and (min-width: 0px) {
-  body,
-  html {
-    font-family: "HelveticaNeue", sans-serif;
-    font-size: 20px;
-    background-color: #f1f1f1;
-    max-width: 100%;
-    overflow-x: hidden;
+    */
+    display: flex; /* establish flex container */
+    flex-direction: column; /* make main axis vertical */
+    justify-content: center; /* center items vertically, in this case */
   }
 
-  #portfolio {
-    width: 100%;
-    height: 80vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  #pricing .title {
+    font-size: 70px;
+    line-height: 95%;
+    font-weight: bold;
+    padding-bottom: 50px;
   }
 
-  #portfolio .container {
-    width: 95%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 5vw;
-  }
-
-  #portfolio .left-section {
-    height: 33.3%;
-    border: 1px dashed;
-    background-color: rgb(208, 255, 208);
-  }
-
-  #portfolio .middle-section {
-    height: 33.3%;
-    border: 1px dashed;
-    background-color: rgb(195, 255, 195);
-  }
-
-  #portfolio .right-section {
-    height: 33.3%;
-    border: 1px dashed;
-    background-color: rgb(181, 253, 181);
-  }
-}
-
-/* -- Ipad Pro -- */
-@media screen and (min-width: 450px) and (max-width: 991px) {
-}
-
-/* -- Tablets -- */
-@media screen and (min-width: 750px) and (max-width: 1023px) {
-}
-
-/* -- Small Desktop -- */
-@media screen and (min-width: 1024px) {
-  body,
-  html {
-    font-family: "HelveticaNeue", sans-serif;
-    font-size: 20px;
-    background-color: #f1f1f1;
-    max-width: 100%;
-    overflow-x: hidden;
-  }
-
-  #portfolio {
-    width: 100%;
-    height: 90vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-
-  #portfolio .container {
-    width: 95%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 5vw;
-  }
-
-  #portfolio .left-section {
-    width: 33.3%;
-    height: 90vh;
-    border: 1px dashed;
-    background-color: rgb(208, 255, 208);
-  }
-
-  #portfolio .middle-section {
-    width: 33.3%;
-    height: 90vh;
-    border: 1px dashed;
-    background-color: rgb(195, 255, 195);
-  }
-
-  #portfolio .right-section {
-    width: 33.3%;
-    height: 90vh;
-    border: 1px dashed;
-    background-color: rgb(181, 253, 181);
-  }
-
-  #portfolio .title {
+  #pricing .description {
+    width: 600px;
     padding-bottom: 20px;
   }
 
-  #portfolio .description {
-    padding-bottom: 20px;
+  #pricing .pricing-box .pricing-title {
+    font-weight: bold;
+  }
+
+  #pricing .pricing-box p {
+    width: 350px;
+    margin-bottom: 10px;
+  }
+
+  #pricing .pricing-box hr {
+    border: 1px solid rgb(214, 214, 214);
+    width: 80%;
+    margin-left: 0;
   }
 }
 
@@ -502,8 +626,10 @@
 
   #blog .left-section {
     width: 100%;
+    /*
     border: 1px dashed;
     background-color: rgb(255, 208, 208);
+    */
     text-align: center;
   }
 }
@@ -529,7 +655,7 @@
 
   #blog {
     width: 100%;
-    height: 150vh;
+    height: 180vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -544,12 +670,22 @@
 
   #blog .left-section {
     width: 100%;
-    height: 50vh;
+    height: 60vh;
+    /*
     border: 1px dashed;
     background-color: rgb(255, 208, 208);
+    */
     display: flex; /* establish flex container */
     flex-direction: column; /* make main axis vertical */
     justify-content: center; /* center items vertically, in this case */
+    border-bottom: 2px solid black;
+  }
+
+  #blog .left-section .blog-title {
+    font-size: 65px;
+    line-height: 105%;
+    font-weight: bold;
+    padding-bottom: 50px;
   }
 }
 

@@ -55,7 +55,6 @@
 
   .navbar {
     width: 95%;
-    background-color: rgb(212, 212, 212);
     border-bottom: 2px solid black;
     display: flex;
     flex-direction: row-reverse;
@@ -65,7 +64,6 @@
   .navbar-navigation {
     width: 20%;
     height: 100%;
-    border: 1px dashed;
     display: flex; /* establish flex container */
     flex-direction: column; /* make main axis vertical */
     justify-content: center; /* center items vertically, in this case */
@@ -74,7 +72,6 @@
   .navbar-logo {
     width: 20%;
     height: 100%;
-    border: 1px dashed;
     display: flex; /* establish flex container */
     flex-direction: column; /* make main axis vertical */
     justify-content: center; /* center items vertically, in this case */
@@ -84,7 +81,6 @@
   .navbar-menu {
     width: 60%;
     height: 100%;
-    border: 1px dashed;
     display: flex; /* establish flex container */
     flex-direction: column; /* make main axis vertical */
     justify-content: center; /* center items vertically, in this case */
@@ -104,6 +100,10 @@
   .navbar-menu a {
     text-decoration: none;
     color: black;
+  }
+
+  .navbar-menu a:hover {
+    color: rgb(48, 86, 197);
   }
 
   .navbar-menu {
@@ -133,7 +133,7 @@
   nav {
     width: 100%;
     height: 80px;
-
+    font-weight: bold;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -141,7 +141,6 @@
 
   .navbar {
     width: 95%;
-    background-color: rgb(212, 212, 212);
     border-bottom: 2px solid black;
     display: flex;
     flex-direction: row;
@@ -151,7 +150,6 @@
   .navbar-navigation {
     width: 15%;
     height: 100%;
-    border: 1px dashed;
     display: flex; /* establish flex container */
     flex-direction: column; /* make main axis vertical */
     justify-content: center; /* center items vertically, in this case */
@@ -160,7 +158,6 @@
   .navbar-logo {
     width: 25%;
     height: 100%;
-    border: 1px dashed;
     display: flex; /* establish flex container */
     flex-direction: column; /* make main axis vertical */
     justify-content: center; /* center items vertically, in this case */
@@ -169,7 +166,6 @@
   .navbar-menu {
     width: 60%;
     height: 100%;
-    border: 1px dashed;
     display: flex; /* establish flex container */
     flex-direction: column; /* make main axis vertical */
     justify-content: center; /* center items vertically, in this case */
@@ -179,6 +175,7 @@
     display: flex;
     justify-content: right;
     list-style: none;
+    font-weight: bold;
   }
 
   .navbar-menu li {
@@ -189,6 +186,11 @@
   .navbar-menu a {
     text-decoration: none;
     color: black;
+  }
+
+  .navbar-menu a:hover {
+    color: rgb(48, 86, 197);
+    transition-duration: 0.2s;
   }
 }
 
@@ -220,23 +222,29 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    /*
+    background-color: gray;
+    */
   }
 
   #footer .container {
     width: 95%;
     display: flex;
     flex-direction: row;
-    background-color: gray;
   }
 
   #footer .left-section {
     width: 40%;
+    /*
     border: 1px dashed;
+    */
   }
 
   #footer .right-section {
     width: 60%;
+    /*
     border: 1px dashed;
+    */
   }
 
   .socials {
@@ -250,8 +258,116 @@
     width: 95%;
     display: flex;
     flex-direction: row;
-    background-color: rgb(255, 255, 159);
   }
+}
+
+/* -- Ipad Pro -- */
+@media screen and (min-width: 450px) and (max-width: 991px) {
+}
+
+/* -- Tablets -- */
+@media screen and (min-width: 750px) and (max-width: 1023px) {
+}
+
+/* -- Small Desktop -- */
+@media screen and (min-width: 1024px) {
+  body,
+  html {
+    font-family: "HelveticaNeue", sans-serif;
+    font-size: 20px;
+    max-width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+  }
+
+  #footer {
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(32, 32, 32);
+    color: white;
+  }
+
+  #footer .container {
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+  }
+
+  #footer .header {
+    font-weight: bold;
+    font-size: 30px;
+  }
+
+  #footer p {
+    color: rgb(179, 179, 179);
+  }
+
+  #footer .left-section {
+    padding-top: 100px;
+    width: 33%;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #footer .left-section input {
+    width: 60%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(32, 32, 32);
+    border: none;
+    border-bottom: 2px solid rgb(153, 153, 153);
+    font-size: 20px;
+  }
+
+  #footer .middle-section {
+    padding-top: 100px;
+    width: 33%;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #footer .right-section {
+    padding-top: 100px;
+    width: 33%;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .socials {
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(21, 21, 21);
+  }
+
+  .socials .container {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+/* -- Regular Desktop -- */
+@media screen and (min-width: 1300px) {
+}
+
+@media only screen and (min-width: 2000px) {
+}
+
+/*-- -------------------------- -->
+<---         SECTION TITLE      -->
+<--- -------------------------- -*/
+
+/* -- Mobile -- */
+@media screen and (min-width: 0px) {
 }
 
 /* -- Ipad Pro -- */
@@ -273,90 +389,40 @@
     overflow-x: hidden;
   }
 
-  #footer {
+  #section-title {
+    position: sticky;
+    top: 0px;
     width: 100%;
-    height: 60vh;
+    height: 7vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
   }
 
-  #footer .container {
+  #section-title .container {
     width: 95%;
-    display: flex;
-    flex-direction: row;
-    background-color: gray;
-  }
-
-  #footer .left-section {
-    width: 40%;
-    border: 1px dashed;
-  }
-
-  #footer .left-section .navigation {
-    height: 55%;
-    border: 1px dashed;
-  }
-
-  #footer .left-section .email-form {
-    height: 45%;
-    border: 1px dashed;
-  }
-
-  #footer .right-section {
-    width: 60%;
-    border: 1px dashed;
-  }
-
-  #footer .right-section .email {
-    height: 55%;
-    border: 1px dashed;
-  }
-
-  #footer .right-section .services {
-    height: 45%;
-    border: 1px dashed;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    border-bottom: 2px solid black;
   }
 
-  #footer .right-section .services .left {
-    border: 1px dashed;
-    width: 33.3%;
+  #section-title .left-section {
+    width: 55%;
     display: flex; /* establish flex container */
-    flex-direction: row; /* make main axis vertical */
+    flex-direction: column; /* make main axis vertical */
     justify-content: center; /* center items vertically, in this case */
   }
 
-  #footer .right-section .services .middle {
-    border: 1px dashed;
-    width: 33.3%;
+  #section-title .right-section {
+    width: 40%;
     display: flex; /* establish flex container */
-    flex-direction: row; /* make main axis vertical */
+    flex-direction: column; /* make main axis vertical */
     justify-content: center; /* center items vertically, in this case */
-  }
-
-  #footer .right-section .services .right {
-    border: 1px dashed;
-    width: 33.3%;
-    display: flex; /* establish flex container */
-    flex-direction: row; /* make main axis vertical */
-    justify-content: center; /* center items vertically, in this case */
-  }
-
-  .socials {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-
-  .socials .container {
-    width: 95%;
-    display: flex;
-    flex-direction: row;
-    background-color: rgb(255, 255, 159);
+    font-size: 20px;
+    line-height: 150%;
+    text-align: right;
+    font-weight: bold;
   }
 }
 
