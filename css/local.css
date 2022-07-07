@@ -550,7 +550,6 @@
   }
 
   #pricing .pricing-box {
-    width: 49%;
     /*
     border: 1px dashed;
     */
@@ -564,6 +563,7 @@
     line-height: 95%;
     font-weight: bold;
     padding-bottom: 50px;
+    width: 100%;
   }
 
   #pricing .description {
@@ -576,7 +576,6 @@
   }
 
   #pricing .pricing-box p {
-    width: 350px;
     margin-bottom: 10px;
   }
 
@@ -666,6 +665,17 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+
+  #blog a {
+    text-decoration: none;
+    color: rgb(32, 32, 32);
+  }
+
+  #blog a:hover {
+    color: rgb(48, 86, 197);
+    transition: 0.2s ease-in;
+    transition: 0.2s ease-out;
   }
 
   #blog .left-section {
